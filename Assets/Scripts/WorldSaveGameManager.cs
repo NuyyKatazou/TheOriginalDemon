@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 namespace NK
 {
-
     public class WorldSaveGameManager : MonoBehaviour
     {
         public static WorldSaveGameManager instance;
