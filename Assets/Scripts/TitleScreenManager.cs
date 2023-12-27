@@ -1,18 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.Netcode;
 
-public class TitleScreenManager : MonoBehaviour
+namespace NK
 {
-    // Start is called before the first frame update
-    void Start()
+    public class TitleScreenManager : MonoBehaviour
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public void StartNetworkAsHost()
+        {
+            NetworkManager.Singleton.StartHost();
+        }
     }
 }
