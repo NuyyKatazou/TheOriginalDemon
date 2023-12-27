@@ -11,5 +11,10 @@ namespace NK
         {
             NetworkManager.Singleton.StartHost();
         }
+
+        public void StartNewGame()
+        {
+            StartCoroutine(WorldSaveGameManager.instance.LoadNewGame());
+        }
     }
 }
